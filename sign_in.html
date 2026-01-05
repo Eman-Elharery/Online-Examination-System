@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="signup">
+      <h2>Create Account</h2>
+
+      <form id="signup-form">
+        <label>Name</label>
+        <div class="input-box">
+          <span class="fa-solid fa-user icon"></span>
+          <input type="text" id="signup_name" placeholder="Enter your name">
+        </div>
+        <span class="error" id="name_error"></span>
+        <label>Email</label>
+        <div class="input-box">
+          <span class="fa-solid fa-envelope icon"></span>
+          <input type="email" id="signup_email" placeholder="email@gmail.com">
+        </div>
+        <span class="error" id="email_error"></span>
+        <label>Password</label>
+        <div class="input-box">
+          <span class="fa-solid fa-lock icon"></span>
+          <input type="password" id="signup_password" placeholder="Enter your password">
+          <span class="fa-solid fa-eye eye"></span>
+        </div>
+        <span class="error" id="password_error"></span>
+
+        <label>Re-enter Password</label>
+        <div class="input-box">
+          <span class="fa-solid fa-lock icon"></span>
+          <input type="password" id="signup_confirmPassword" placeholder="Re-enter your password">
+          <span class="fa-solid fa-eye eye"></span>
+        </div>
+        <span class="error" id="re_password_error"></span>
+
+        <button type="submit">Create Account</button>
+        <p class="mobile-switch">
+          Already have an account ?
+          <span class="switch" id="toSignin"> Sign in</span>
+        </p>
+      </form>
+    </div>
+
+
+    <div class="image-box">
+      <img src="assets/sign_in.png" alt="">
+      <button class="signin-btn">Sign in</button>
+    </div>
+    <div class="signin">
+      <h2>Sign in</h2>
+
+      <form id="signin-form">
+
+        <label>Email</label>
+        <div class="input-box">
+          <span class="fa-solid fa-envelope icon"></span>
+          <input type="email" id="signin_email" placeholder="email@gmail.com">
+        </div>
+        <span class="error" id="email_error2"></span>
+        <label>Password</label>
+        <div class="input-box">
+          <span class="fa-solid fa-lock icon"></span>
+          <input type="password" id="signin_password" placeholder="Enter your password">
+          <span class="fa-solid fa-eye eye"></span>
+        </div>
+        <span class="error" id="password_error2"></span>
+
+        <button type="submit">sign in</button>
+        <p class="mobile-switch">
+          Don’t have an account ?
+          <span class="switch" id="toSignup"> Create one</span>
+        </p>
+      </form>
+    </div>
+
+  </div>
+
+  <div id="successAlert">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Account created successfully ✔</span>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="js/sign.js"></script>
+</body>
+
+</html>

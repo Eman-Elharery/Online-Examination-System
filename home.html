@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="min-h-screen relative overflow-hidden">
+       <div class="navbar bg-[#4B687A] shadow-sm text-white font-serif">
+  <div class="navbar-start">
+   
+    <p class=" text-xl font-[font-mono] m-3">Examy</p>
+  </div>
+ 
+  <div class="navbar-end ">
+      <a id="signInBtn" class="btn me-5 bg-white text-[#43525d]  hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126]"  >Sign in</a>
+      <a  id="signUpBtn" class="btn     bg-white text-[#43525d]  hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126]"  >Sign up</a>
+      <a id="logOutBtn" class="btn me-5 bg-white text-[#43525d]  hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126]" >Log out</a>
+   </div>
+</div>
+
+  <!----------------------------------------------------------------------------------->
+  <div class="hero min-h-screen">
+    <div class="hero-content flex-col lg:flex-row-reverse ">
+      <img src="assets/home.png" class="max-w-sm w-full block" />
+      <div>
+        <h1 class="text-5xl font-bold " id="home_name">Welcome, Student!</h1>
+        <p class="py-6 text-2xl font-sans">
+          This platform allows you to take your exams easily and securely.
+          Stay focused, stay confident, and good luck!
+        </p>
+        <button id="startExamBtn"
+          class="btn w-4/12 bg-[#4B687A] text-white px-4 py-2 rounded-full hover:bg-[#2c3d48]">Start</button>
+      </div>
+    </div>
+  </div>
+
+
+  <dialog id="my_modal_5" class="modal modal-middle">
+    <div class="modal-box">
+      <h3 class="mb-4 text-xl font-bold text-center">Exam Details</h3>
+      <div class="text-left mb-6 ">
+        <p class="mb-2"><strong>Subject :</strong> Computer science</p>
+        <p class="mb-2"><strong>Duration :</strong> 120 minutes</p>
+        <p class="mb-2"><strong>Number of Questions :</strong> 10 questions</p>
+        <p class="mb-2"><strong>Total Marks :</strong> 100 marks</p>
+        <p class="mb-2"><strong>Passing Marks :</strong> 50 marks</p>
+        <div class="modal-action flex justify-between">
+          <button id="cancelExam"
+            class="btn w-1/4 bg-[#F3C168] text-black px-4 py-2 rounded-full hover:bg-[#c09b5a] m-auto">Cancel</button>
+          <button id="confirmStartExam"
+            class="btn w-1/4 bg-[#4bae4f] text-white px-4 py-2 rounded-full hover:bg-[#307133] m-auto">Start</button>
+
+        </div>
+      </div>
+  </dialog>
+
+  <dialog id="login_modal" class="modal modal-middle">
+    <div class="modal-box text-center">
+      <h3 class="text-lg font-bold mb-4">Login Required</h3>
+      <p class="mb-6">You must sign in before starting the exam.</p>
+
+      <div class="modal-action justify-center">
+        <button id="goToLogin" class="btn bg-[#4B687A] text-white rounded-full w-1/2">
+          Sign In
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="Taken" class="modal modal-middle">
+    <div class="modal-box text-center">
+      <h3 class="text-lg font-bold mb-4">Exam Already Taken</h3>
+      <p class="mb-6">You have already started this exam. You cannot take it again.</p>
+
+      <div class="modal-action justify-center">
+        <button id="cancelExam2"
+          class="btn w-1/4 bg-[#F3C168] text-black px-4 py-2 rounded-full hover:bg-[#c09b5a] m-auto ">Cancel</button>
+        <button id="res_home"
+          class="btn w-1/4 bg-[#4bae4f] text-white px-4 py-2 rounded-full hover:bg-[#307133] m-auto ">Result</button>
+      </div>
+    </div>
+  </dialog>
+
+
+  <script src="js/nav.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+
+</html>

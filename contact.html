@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <body class="bg-[#E5E3DD] pb-20">
+     <div class="navbar bg-[#4B687A] shadow-sm text-white font-serif">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a href="home.html" class=" hover:bg-[#4B687A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">Home</a></li>
+         <li><a href="about.html" class=" hover:bg-[#4B687A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">About</a></li>
+        <li><a href="contact.html" class=" hover:bg-[#4B687A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">Contact</a></li>
+      </ul>
+    </div>
+    <p class=" text-xl font-[font-mono] m-3">Examy</p>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="home.html " class=" hover:bg-[#718c9e] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">Home</a></li>
+      <li><a href="about.html" class=" hover:bg-[#718c9e] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">About</a></li>
+      <li><a href="contact.html" class=" hover:bg-[#718c9e] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">Contact</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end ">
+      <a id="signInBtn" class="btn me-5 bg-white text-[#43525d]  hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126]"  >Sign in</a>
+      <a  id="signUpBtn" class="btn     bg-white text-[#43525d]  hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126]"  >Sign up</a>
+      <a id="logOutBtn" class="btn me-5 bg-white text-[#43525d]  hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126]" >Log out</a>
+   </div>
+</div>
+<!----------------------------------------------------------------------->
+<form class="p-20  m-auto lg:w-1/2">
+  <div class="space-y-12 ">
+    <div class="border-b border-gray-900/10 pb-12">
+      
+        <div class="sm:col-span-3">
+          <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Name</label>
+          <div class="mt-2">
+            <input id="last-name" type="text" name="last-name" autocomplete="family-name" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+          </div>
+        </div>
+
+        <div class="sm:col-span-4">
+          <label for="email" class="block text-sm/6 font-medium text-gray-900">Email address</label>
+          <div class="mt-2">
+            <input id="email" type="email" name="email" autocomplete="email" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+          </div>
+        </div>
+
+
+<div class="sm:col-span-2">
+          <label for="postal-code" class="block text-sm/6 font-medium text-gray-900">phone Number</label>
+          <div class="mt-2">
+            <input id="postal-code" type="text" name="postal-code" autocomplete="postal-code" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+          </div>
+        </div>
+      
+
+         <div class="col-span-full">
+          <label for="about" class="block text-sm/6 font-medium text-gray-900">message</label>
+          <div class="mt-2">
+            <textarea id="about" name="about" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"></textarea>
+          </div>
+          
+        </div>
+        
+
+        
+
+
+  <div class="mt-6 flex items-center justify-end gap-x-6">
+    <button type="button" class="rounded-md px-3 py-2 text-sm font-semibold bg-white text-black hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126] ">Cancel</button>
+    <button type="submit" class="rounded-md px-3 py-2 text-sm font-semibold  shadow-xs hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126]  bg-[#4B687A] text-white">Save</button>
+  </div>
+
+  </div>
+  </div>
+</form>
+
+
+
+<script src="js/nav.js"></script>
+    </body>
+</html>

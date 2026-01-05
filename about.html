@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <body class="bg-[#E5E3DD]">
+     <div class="navbar bg-[#4B687A] shadow-sm text-white font-serif">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a href="home.html" class=" hover:bg-[#4B687A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">Home</a></li>
+         <li><a href="about.html" class=" hover:bg-[#4B687A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">About</a></li>
+        <li><a href="contact.html" class=" hover:bg-[#4B687A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">Contact</a></li>
+      </ul>
+    </div>
+    <p class=" text-xl font-[font-mono] m-3">Examy</p>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="home.html " class=" hover:bg-[#718c9e] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">Home</a></li>
+      <li><a href="about.html" class=" hover:bg-[#718c9e] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">About</a></li>
+      <li><a href="contact.html" class=" hover:bg-[#718c9e] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bg-orange-700">Contact</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end ">
+      <a id="signInBtn" class="btn me-5 bg-white text-[#43525d]  hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126]"  >Sign in</a>
+      <a  id="signUpBtn" class="btn     bg-white text-[#43525d]  hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126]"  >Sign up</a>
+      <a id="logOutBtn" class="btn me-5 bg-white text-[#43525d]  hover:bg-[#1a2126] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1a2126]" >Log out</a>
+   </div>
+</div>
+<!----------------------------------------------------------------------->
+<div class="hero bg-base-200 min-h-screen bg-[#ede8da]" >
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <img class="w-full lg:w-1/2"
+      src="assets/sign_in.png"
+      class="max-w-sm rounded-lg shadow-2xl"
+    />
+    <div>
+      <h1 class="text-5xl font-bold">About Us</h1>
+      <p class="py-6">
+       Our Examination System is a web-based platform designed to simplify the process of creating, managing, and taking online exams. The system provides an easy-to-use interface for both students and administrators, ensuring a smooth and efficient examination experience.
+
+Our goal is to enhance the evaluation process by using modern technology to deliver secure, accurate, and fast online assessments.
+      </p>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------->
+
+<script src="js/nav.js"></script>
+    </body>
+</html>
